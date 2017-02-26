@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Meist</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+	<div class="container-fluid">
+	
+		<div class="row">
+			<div class="panel panel-default peapaneel">
+				<div class="col-sm-2">
+					<a class="keelevalik" href="meist.html"><img class="keelenupp" src="eestikeel.png" /></a>
+					<a class="keelevalik" href="aboutus.html"><img class="keelenupp" /></a>
+				</div>
+				<div class="col-sm-8">
+					Toiduveeb
+				</div>
+				<div class="col-sm-2">
+					<a class="keelevalik" href="ostukorv.html"><button id="ostukorvinupp" type="button"> Ostukorv </button></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="menüü" class="row">	
+			<nav class="navbar navbar-default">
+				<ul id="menu" class="nav navbar-nav" >
+					<li class="aktiivne"><a href="meist.html">Meist</a></li>
+					<li><a href="pealeht.html">Tooted</a></li>
+					<li><a href="kuidasosta.html">Kuidas osta?</a></li>
+					<li><a href="tarne.html">Tarne</a></li>
+					<li><a href="registreerimine.html">Registreeri kasutajaks</a></li>
+					<li><a href="sisselogimine.html">Logi sisse</a></li>
+				</ul>
+			</nav>
+		</div>	
+		
+		<div class="row">
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-10">
+				<div id="reklaam" class="panel panel-default">
+					<div class="panel-body">
+						Reklaam
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-1">
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 58.378231, lng: 26.714642
+		};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7L24bTMmDoxBe3tRjaMbnVqENcJPPJdk&callback=initMap">
+    </script>
+
+</body>
+
+
+</html>
