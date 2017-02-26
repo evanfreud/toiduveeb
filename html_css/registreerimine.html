@@ -22,14 +22,14 @@
 		<div class="row">
 			<div class="panel panel-default peapaneel">
 				<div class="col-sm-2">
-					<a class="keelevalik" href="registreerimine.html"><img src="eestikeel.png" height="40px" width="50px" /></a>
-					<a class="keelevalik" href="register.html"><img src="inglisekeel.png" height="40px" width="50px" /></a>
+					<a class="keelevalik" href="registreerimine.html"><img class="keelenupp" src="eestikeel.png" alt="Eesti keel" /></a>
+					<a class="keelevalik" href="register.html"><img class="keelenupp" src="inglisekeel.png" alt="English" /></a>
 				</div>
 				<div class="col-sm-8">
 					Toiduveeb
 				</div>
 				<div class="col-sm-2">
-					<a class="keelevalik" href="ostukorv.html"><button id="ostukorvinupp" type="button"> Ostukorv </button></a>
+					<a class="keelevalik" href="shoppingcart.html"><div id="ostukorvinupp"> Shopping Cart </div></a>
 				</div>
 			</div>
 		</div>
@@ -79,7 +79,7 @@
 								</div>
 								<div class="form-group">
 									<label for="perenimi">Perenimi:</label>
-									<input type="perenimi" class="form-control" id="perenimi">
+									<input type="text" class="form-control" id="perenimi">
 								</div>
 								<div class="form-group">
 									<label for="email">E-mail:</label>
@@ -91,7 +91,7 @@
 								</div>
 								<div class="form-group">
 									<label for="pwd">Salasõna uuesti:</label>
-									<input type="password" class="form-control" id="pwd">
+									<input type="password" class="form-control" id="pwdagain">
 								</div>
 								
 								<button type="submit" class="btn btn-default center-block">Registreeri kasutajaks</button>

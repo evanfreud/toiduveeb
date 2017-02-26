@@ -171,7 +171,7 @@ a:hover {
 }
 
 
-#map {
+#kaart {
     height: 400px;
     width: 60%;
 	margin-left: 20%;
@@ -203,6 +203,11 @@ a:hover {
 #logipaneel p {
 	text-align: center;
 	font-size: 36px;
+}
+
+#ostukorvinupp {
+	margin-top: 30px;
+	border: 1px solid black;
 }
 
 

@@ -25,14 +25,14 @@
 		<div class="row">
 			<div class="panel panel-default peapaneel">
 				<div class="col-sm-2">
-					<a class="keelevalik" href="meist.html"><img class="keelenupp" src="eestikeel.png" /></a>
-					<a class="keelevalik" href="aboutus.html"><img class="keelenupp" src="inglisekeel.png" /></a>
+					<a class="keelevalik" href="meist.html"><img class="keelenupp" src="eestikeel.png" alt="Eesti keel" /></a>
+					<a class="keelevalik" href="aboutus.html"><img class="keelenupp" src="inglisekeel.png" alt="English" /></a>
 				</div>
 				<div class="col-sm-8">
 					FoodWeb
 				</div>
 				<div class="col-sm-2">
-					<a class="keelevalik" href="shoppingcart.html"><button id="ostukorvinupp" type="button"> Shopping Cart </button></a>
+					<a class="keelevalik" href="shoppingcart.html"><div id="ostukorvinupp"> Shopping Cart </div></a>
 				</div>
 			</div>
 		</div>
@@ -66,18 +66,22 @@
 		
 	</div>
 	
-	<div id="map"></div>
+	<div id="kaart"></div>
+	
     <script>
       function initMap() {
-        var uluru = {lat: 58.378231, lng: 26.714642
+	  
+        var asukoht = {lng: 26.714642, lat: 58.378231 
 		};
-        var map = new google.maps.Map(document.getElementById('map'), {
+		
+        var kaart = new google.maps.Map(document.getElementById('kaart'), {
           zoom: 17,
-          center: uluru
+          center: asukoht
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+		
+        var märgend = new google.maps.Marker({
+          position: asukoht,
+          map: kaart
         });
       }
     </script>
