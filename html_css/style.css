@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+﻿@media (min-width: 768px) {
   .navbar-nav {
     width: 100%;
     text-align: center;
@@ -14,6 +14,10 @@
   .container{
         max-width: 970px;
     }
+}
+
+.a {
+	color: white;
 }
 
 .vorm {
@@ -34,14 +38,14 @@
 }
 
 .infopaneel {
-	height: 500px;
-	background-color: #d7dfe2;
+	height: 1200px;
+	background-color: #fff;
 	text-align: center;
-	font-size: 60px;
+	font-size: 12px;
 }
 
 .peapaneel {
-	height: 120px;
+	height: 64px;
 }
 
 .tootepilt {
@@ -81,7 +85,7 @@
 }
 
 .aktiivne {
-	background-color: #bfae99;
+	background-color: #14A3CC;
 }
 
 .test a:hover {
@@ -94,22 +98,39 @@
 }
 
 .peapaneel {
-	background-color: #c0cdd3;
+	background-color: #ff0050;
 	text-align: center;
 	font-size: 50px;
+	
 }
 
-.keelevalik:hover {
-	background-color: #c0cdd3;
-}
+
 
 .keelenupp {
 	height: 40px; 
-	width: 50px;
+	width: 40px;
+}
+
+.keelevalik:hover {
+	background-color: #bfae99;
+	border: 10px;
+}
+
+.logo {
+	height: 64px;
+	width: 128px;
+}
+
+.logo:hover {
+	height: 64px;
+	width: 128px;
+	background-color: #ff0050;
 }
 
 li {
 	text-align: center;
+	font-weight: bold;
+	color: white;
 }
 
 #menu li {
@@ -123,7 +144,7 @@ li {
 }
 
 #menu {
-	background-color: #ede5da;
+	background-color: #098DB2;
 }
 
 
@@ -149,7 +170,7 @@ li {
 
 
 li:hover {
-	background-color: #bfae99 !important;
+	background-color: #14A3CC !important;
 }
 
 
@@ -179,10 +200,9 @@ a:hover {
 
 
 #ostukorvinupp {
-	width: 130px;
-	height: 40px;
-	background-color: #ede5da;
-	font-size: 14px;
+	width: 64px;
+	height: 64px;
+	background-color: #ff0050;
 }
 
 #ostutabel {
@@ -209,5 +229,6 @@ a:hover {
 	margin-top: 30px;
 	border: 1px solid black;
 }
+
 
 
