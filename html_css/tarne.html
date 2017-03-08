@@ -5,10 +5,9 @@
 <head>
 
 <title>Tarne</title>
-
+<script src="jquery.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
 <link rel="stylesheet" href="style.css">
 
@@ -66,7 +65,40 @@
 			<div class="col-sm-8">
 				<div class="panel panel-default infopaneel">
 					<div class="panel-body">
-						Tarne
+					<h1>Tarne</h1>					
+					<figure id="imapc">
+					<object data="UI/estonia_map.svg" type="image/svg+xml" id="imap" width="300" height="250"></object>
+					</figure>
+					
+					<table id="areas">
+      <thead>
+        <tr>
+         <th></th>
+          <th>Название</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr id='parnumaa'> 
+         <td><input type="checkbox"></td>
+         <td>Центр</td>
+        </tr> 
+       <tr id='tallinn'> 
+         <td><input type="checkbox"></td>
+          <td>Восток</td> 
+        </tr> 
+       <tr id='viljandimaa'> 
+        <td><input type="checkbox"></td>
+          <td>Юг</td> 
+        </tr> 
+       <tr id='vostokmaa'> 
+         <td><input type="checkbox"></td>
+          <td>Запад</td> 
+        </tr> 
+       <tr id='narva'> 
+         <td><input type="checkbox"></td>
+          <td>Север</td> 
+        </tr> 
+      </tbody>
 					</div>
 				</div>
 			</div>
@@ -75,6 +107,10 @@
 		</div>
 		
 	</div>
+	
+<script src="script.js"></script>
+
+
 
 </body>
 
