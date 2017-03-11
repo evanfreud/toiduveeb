@@ -6,6 +6,7 @@ jQuery.fn.myAddClass = function (classTitle) {
     jQuery(this).attr("class", (oldClass+" "+classTitle).trim());
   });
 }
+
 jQuery.fn.myRemoveClass = function (classTitle) {
   return this.each(function() {
       var oldClassString = ' '+jQuery(this).attr("class")+' ';
@@ -24,11 +25,11 @@ $(window).load(function () {
   if ('contentDocument' in svgobject)
     var svgdom = svgobject.contentDocument;
 
-/*  // Хак для WebKit (чтобы правильно масштабировал нашу карту)
+  // Хак для WebKit (чтобы правильно масштабировал нашу карту)
   var viewBox = svgdom.rootElement.getAttribute("viewBox").split(" ");
   var aspectRatio = viewBox[2] / viewBox[3];
   svgobject.height = parseInt(svgobject.offsetWidth / aspectRatio);
-*/
+
 
   // Взаимодействие карты и таблички регионов
   $("#areas input[type=checkbox]").change(function() {
@@ -67,6 +68,8 @@ $(window).load(function () {
       $("#"+id, svgdom).myRemoveClass("highlight");
     }
   );  
+  
+  
   // Подсвечиваем строку в таблице при наведении мыши на соотв. регион на карте
   $(svgdom.getElementsByClassName("area")).hover(
     function () {
