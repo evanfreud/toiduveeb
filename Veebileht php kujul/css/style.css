@@ -1,0 +1,227 @@
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right;
+  }
+  
+  .container{
+        max-width: 970px;
+    }
+}
+
+.vorm {
+	padding-top: 20px;
+}
+
+.tootepaneel div:hover {
+	background-color: #aeb2b7;
+}
+
+.otsing {
+	margin-top: 50px;
+}
+
+.otsing1 {
+	width: 70%; 
+	margin: -20px 0px 30px 15%;
+}
+
+.infopaneel {
+	height: 500px;
+	background-color: #d7dfe2;
+	text-align: center;
+	font-size: 60px;
+}
+
+.peapaneel {
+	height: 120px;
+}
+
+.tootepilt {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	display: block;
+	float: left;
+	background-color: #b3b3b3;
+}
+
+.tootepaneel {
+	height: 500px;
+	width: 100%;
+	background-color: #d7dfe2;
+	
+}
+
+.tootepaneel div {
+	background-color: #cccccc;
+}
+
+.tootemenüü {
+	background-color: #ede5da;
+}
+
+.osturiba {
+	width: 700px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+	padding: 20px;
+}
+
+.osturiba2 {
+	width: 100px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+
+.aktiivne {
+	background-color: #bfae99;
+}
+
+.test a:hover {
+	background-color: #bfae99;
+}
+
+.tootemenüü li:hover {
+	
+	background-color: #bfae99;
+}
+
+.peapaneel {
+	background-color: #c0cdd3;
+	text-align: center;
+	font-size: 50px;
+}
+
+.keelevalik:hover {
+	background-color: #c0cdd3;
+}
+
+.keelenupp {
+	height: 40px; 
+	width: 50px;
+}
+
+li {
+	text-align: center;
+}
+
+#menu li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#menüü {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#menu {
+	background-color: #ede5da;
+}
+
+
+
+
+#reklaam {
+	height: 100px;
+	background-color: #a8c0cd;
+	text-align: center;
+	font-size: 30px;
+}
+
+#reklaam2 {
+	background-color: #a8c0cd;
+	height: 460px; 
+	width: 70%; 
+	margin-top: 40px;
+	text-align: center;
+	font-size: 30px;
+	 
+}
+
+
+
+li:hover {
+	background-color: #bfae99 !important;
+}
+
+
+
+body {
+	background-color: #f2f1ef;
+}
+
+#logipaneel {
+	background-color: #d7dfe2;
+}
+
+#registreerimispaneel {
+	background-color: #d7dfe2;
+}
+
+a:hover {
+	background-color: #bfae99; 
+}
+
+
+#map {
+    height: 350px;
+    width: 500px;
+	margin-left: 20px;
+}
+
+
+#ostukorvinupp {
+	width: 130px;
+	height: 40px;
+	background-color: #ede5da;
+	font-size: 14px;
+}
+
+#ostutabel {
+	border-collapse: collapse;
+	background-color: #d7e1e5;
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+
+#registreerimispaneel p {
+	text-align: center;
+	font-size: 36px;
+}
+
+#logipaneel p {
+	text-align: center;
+	font-size: 36px;
+}
+
+#ostukorvinupp {
+	
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#tervitus {
+	font-size: 16px; 
+	text-align: center;
+}
+
+#kasutaja {
+	font-size: 20px;
+}
+
+
