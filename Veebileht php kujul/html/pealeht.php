@@ -1,21 +1,23 @@
-<!DOCTYPE html>
 <?php
 session_start();
 ?>
-<html lang="en">
+
+<!DOCTYPE html>
+
+<html>
 
 <head>
 
 <title>Toiduveeb</title>
 
-<meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script src="../javascript/skript.js"> </script>
 </head>
 
-<script src="../javascript/skript.js"> </script>
 <body onload="laaditud();">
 
 	<div class="container-fluid">
@@ -36,7 +38,7 @@ session_start();
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include '../php/profiil.php';
@@ -67,7 +69,7 @@ session_start();
 				<div id="reklaam" class="panel panel-default">
 					
 						
-						<img id="pilt" />
+						<img id="pilt" src="pilt.jpg" alt="Pilt" />
 					
 				</div>
 			</div>
@@ -82,7 +84,7 @@ session_start();
 					<div class="input-group otsing1">
 						<input type="text" class="form-control" placeholder="Otsi toodet...">
 						<div class="input-group-btn">
-							<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							<button class="btn btn-default" type="submit"><i class="glyphicon-search"></i></button>
 						</div>
 					</div>
 				</form>
@@ -116,7 +118,7 @@ session_start();
 					<div class="panel panel-default tootepilt">
 					</div>
 					<div class="panel panel-default tootepilt">
-						<img src="logo.png" width="80%" height="80%" />
+						
 					</div>
 					<div class="panel panel-default tootepilt">
 					</div>
@@ -153,7 +155,7 @@ session_start();
 			<div class="col-sm-3">
 				<div id="reklaam2" style="display: flex;" class="panel panel-default">
 					
-						<img id="pilt2" />
+						<img id="pilt2" src="pilt.jpg" alt="Pilt" />
 					
 				</div>
 			</div>

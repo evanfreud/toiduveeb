@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-
 <?php
 session_start();
 ?>
 
-<html lang="en">
+<!DOCTYPE html>
+
+<html>
 
 <head>
 
 <title>Meist</title>
 
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script src="../javascript/skript.js"> </script>
 
 </head>
 
-
-<script src="../javascript/skript.js"> </script>
 <body onload="laaditud();">
 
 
@@ -42,7 +40,7 @@ session_start();
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include '../php/profiil.php';
@@ -71,7 +69,7 @@ session_start();
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" />
+					<img id="pilt" src="pilt.jpg" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -85,8 +83,8 @@ session_start();
 <div id="map"></div>
 
     <script src="../javascript/kaart.js">
-		initMap();
     </script>
+	<script> initMap(); </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbhRJCV-nsdPFkikf-yNPYm_fZ5kgZE3A&callback=initMap"
     async defer></script>
 

@@ -1,23 +1,22 @@
-<!DOCTYPE html>
 <?php
 session_start();
 ?>
-<html lang="en">
+
+<!DOCTYPE html>
+
+<html>
 
 <head>
 
 <title>Ostukorv</title>
 
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
+<script src="../javascript/skript.js"> </script>
 </head>
 
-
-<script src="../javascript/skript.js"> </script>
 <body onload="laaditud();">
 
 	<div class="container-fluid">
@@ -38,7 +37,7 @@ session_start();
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include '../php/profiil.php';
@@ -67,7 +66,7 @@ session_start();
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" />
+					<img id="pilt" src="pilt.jpg" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">

@@ -1,24 +1,20 @@
 <?php
-
 	session_start();
-
 ?>
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 
 <head>
 <title>Sisselogimine</title>
-<meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
+<script src="../javascript/skript.js"> </script>
 </head>
 
-
-<script src="../javascript/skript.js"> </script>
 <body onload="laaditud();">
 
 	<div class="container-fluid">
@@ -39,7 +35,7 @@
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
 					
 					<?php
 						if (isset($_SESSION['id'])){
@@ -69,7 +65,7 @@
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" />
+					<img id="pilt" src="pilt.jpg" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -92,11 +88,11 @@
 							<form class="vorm" action="../php/login.php" method="POST">
 								
 								<div class="form-group">
-									<label for="email">E-mail:</label>
+									<label>E-mail:</label>
 									<input type="email" class="form-control" name="email">
 								</div>
 								<div class="form-group">
-									<label for="pwd">Salasõna:</label>
+									<label>Salasõna:</label>
 									<input type="password" class="form-control" name="password">
 								</div>
 								

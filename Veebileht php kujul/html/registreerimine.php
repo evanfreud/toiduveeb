@@ -1,27 +1,22 @@
 <?php
-
 	session_start();
-
 ?>
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 
 <head>
 
 <title>Registreerimine</title>
 
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script src="../javascript/skript.js"> </script>
 
 </head>
 
-
-<script src="../javascript/skript.js"> </script>
 <body onload="laaditud();">
 
 	<div class="container-fluid">
@@ -42,7 +37,7 @@
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include '../php/profiil.php';
@@ -71,7 +66,7 @@
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" />
+					<img id="pilt" src="pilt.jpg" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -99,29 +94,29 @@
 						<div class="col-sm-6">
 							<form style="padding: 20px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 								<div class="form-group">
-									<label for="eesnimi">Eesnimi:</label>
+									<label>Eesnimi:</label>
 									<input type="text" class="form-control" name="eesnimi">
 									
 									<span><?php echo $errEesnimi;?></span>
 									
 								</div>
 								<div class="form-group">
-									<label for="perenimi">Perenimi:</label>
+									<label>Perenimi:</label>
 									<input type="text" class="form-control" name="perenimi">
 									<span><?php echo $errPerenimi;?></span>
 								</div>
 								<div class="form-group">
-									<label for="email">E-mail:</label>
+									<label>E-mail:</label>
 									<input type="email" class="form-control" name="email">
 									<span><?php echo $errEmail;?></span>
 								</div>
 								<div class="form-group">
-									<label for="pwd">Salasõna:</label>
+									<label>Salasõna:</label>
 									<input type="password" class="form-control" name="parool">
 									<span><?php echo $errParool;?></span>
 								</div>
 								<div class="form-group">
-									<label for="pwd">Salasõna uuesti:</label>
+									<label>Salasõna uuesti:</label>
 									<input type="password" class="form-control" name="parooluuesti">
 									<span><?php echo $errParool;?></span>
 								</div>
