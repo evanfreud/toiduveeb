@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	session_start();
 ?>
 
@@ -26,9 +26,10 @@
 				</div>
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>
+				
 				</div>
 				
-				<div class="col-sm-3 nupupaneel" id="nupupaneel">
+				<div class="col-sm-2 nupupaneel" id="nupupaneel">
 					<p id="nimetervitus"><?php
 						if (isset($_SESSION['id'])){
 							echo $_SESSION['id'];
@@ -43,6 +44,12 @@
 						} 
 					?>
 					
+				</div>
+				<div class="col-sm-1">
+				<form action="../php/logout.php">
+				<p></p>
+				<button type="submit" class="btn btn-default center-block" style="height:50px;width:100px">Logi välja</button>
+				</form>
 				</div>
 			</div>
 		</div>
@@ -99,12 +106,9 @@
 								<div class="checkbox">
 									<label><input type="checkbox"> Jäta meelde</label>
 								</div>
-								<button type="submit" class="btn btn-default center-block">Logi sisse</button>
+								<button type="submit" class="btn btn-default center-block" style="height:50px;width:100px">Logi sisse</button>
 								
-							</form>
-							<form action="../php/logout.php">
-							<button type="submit" class="btn btn-default center-block">Logi välja</button>
-							</form>
+
 							
 							<?php
 								if (isset($_SESSION['id'])){
