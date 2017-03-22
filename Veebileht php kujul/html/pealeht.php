@@ -16,6 +16,7 @@ session_start();
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <script src="../javascript/skript.js"> </script>
+
 </head>
 
 <body onload="laaditud();">
@@ -92,61 +93,63 @@ session_start();
 				<nav class="navbar navbar-default">
 					<ul class="nav nav-pills nav-stacked tootemenüü">
 						
-						<li><a href="#">Teraviljatooted</a></li>
-						<li><a href="#">Piimatooted</a></li>
-						<li><a href="#">Lihatooted</a></li>
-						<li><a href="#">Puu- ja juurviljad</a></li>
-						<li><a href="#">Külmutatud tooted</a></li>
-						<li><a href="#">Joogid</a></li>
-						<li><a href="#">Maiustused</a></li>
-						<li><a href="#">Majapidamistarbed</a></li>
+						<li onclick="vali(1311);"><a href="#">Teraviljatooted</a></li>
+						<li onclick="vali(1010);"><a href="#">Piimatooted</a></li>
+						<li onclick="vali(1212);"><a href="#">Lihatooted</a></li>
+						<li onclick="vali(1119);"><a href="#">Puu- ja juurviljad</a></li>
+						<li onclick="vali(1116);"><a href="#">Külmutatud tooted</a></li>
+						<li onclick="vali(1110);"><a href="#">Joogid</a></li>
+						<li onclick="vali(1410);"><a href="#">Maiustused</a></li>
+						<li onclick="vali(0);"><a href="#">Majapidamistarbed</a></li>
                     </ul>
 				</nav>
 			</div>
 			
 			<div class="col-sm-6">
 				<div class="panel panel-default tootepaneel"> 
-					<div class="panel panel-default tootepilt">
+					
+					
+					<div id ="0" class="panel panel-default tootepilt">
+					
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="1" class="panel panel-default tootepilt">
 					</div>
-					<div id="muutus" class="panel panel-default tootepilt">
-						Tekst
-					</div>
-					<div class="panel panel-default tootepilt">
-					</div>
-					<div class="panel panel-default tootepilt">
-					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="2" class="panel panel-default tootepilt">
 						
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="3" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="4" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="5" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="6" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="7" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="8" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="9" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="10" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="11" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="12" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="13" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="14" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="15" class="panel panel-default tootepilt">
 					</div>
-					<div class="panel panel-default tootepilt">
+					<div id="16" class="panel panel-default tootepilt">
+					</div>
+					<div id="17" class="panel panel-default tootepilt">
+					</div>
+					<div id="18" class="panel panel-default tootepilt">
+					</div>
+					<div id="19" class="panel panel-default tootepilt">
 					</div>
 					
 					
@@ -163,7 +166,10 @@ session_start();
 		</div>
 		
 	</div>
-
+	<script src="../javascript/tootevalik.js"> </script>
+	<script> vali(); </script>
+	<div id="test" class="panel panel-default" width="100px" height="100px">
+					</div>
 </body>
 
 

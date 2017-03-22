@@ -161,7 +161,7 @@ session_start();
 		</div>
 		
 	</div>
-	
+	<script src="../javascript/script2.js"></script>
 
 </body>
 
