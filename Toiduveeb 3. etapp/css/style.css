@@ -1,0 +1,384 @@
+﻿@media (min-width: 768px) {
+#text {
+  width: 50%;
+  float: right;
+  /* -moz-box-sizing: border-box; */
+  box-sizing: border-box;
+  padding: 0 1em;     
+}
+
+#imapc {
+  display: block;
+  width: 50%;
+  float: right;
+  /* -moz-box-sizing: border-box; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+  border: 0;
+}
+
+#imap{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#areas {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  /* -moz-box-sizing: border-box; */
+}
+
+figcaption {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td, th {
+  border: 1px solid silver;
+  padding: 0.2em 1em;
+}
+
+thead th {
+  background: #E0E0E0;
+  color: black;
+}
+
+tr {
+  background: white;
+}
+
+tr.red {
+  background: #FFF0F0;
+}
+
+tr.gray {
+  background: #CFCFCF;
+}
+
+tr:nth-child(even) {
+  background: #F0F0F0;
+}
+
+tr:nth-child(even).red {
+  background: #FFE6E6;
+}
+
+tr:nth-child(even).gray {
+  background: #CCCCCC;
+}
+
+tr.selected {
+  background: #CCCCFF;
+}
+tr:nth-child(even).selected {
+  background: #BBBBFF;
+}
+               
+tr.highlight, tr:hover, tr:nth-child(even):hover, tr:nth-child(even).highlight,
+tr.red.highlight, tr.gray.highlight, tr.selected.highlight {
+  background: #FFFF99;
+  color: red;
+}
+
+/* Всплывающие подсказки */
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	opacity: 0.85;
+}
+
+#tooltip p {
+  margin: 0;
+}
+
+	
+	
+	
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right;
+  }
+  
+  .container{
+        max-width: 970px;
+    }
+}
+
+tr.selected {
+   background: #CCCCFF;
+}
+tr:nth-child(even).selected {
+   background: #BBBBFF;
+}
+
+.vorm {
+	padding-top: 20px;
+}
+
+.tootepaneel div:hover {
+	background-color: #aeb2b7;
+}
+
+.otsing {
+	margin-top: 50px;
+}
+
+.otsing1 {
+	width: 70%; 
+	margin: -20px 0px 30px 15%;
+}
+
+.infopaneel {
+	height: 1200px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+.tootepilt {
+	height: 120px;
+	width: 120px;
+	margin: 10px;
+	display: flex;
+	float: left;
+	background-color: #b3b3b3;
+}
+
+.tootepaneel {
+	height: 600px;
+	background-color: #d7dfe2;
+	
+}
+
+.tootepaneel div {
+	background-color: #cccccc;
+}
+
+.tootemenyy {
+	background-color: #ede5da;
+}
+
+.osturiba {
+	width: 700px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+	padding: 20px;
+}
+
+.osturiba2 {
+	width: 100px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+
+.aktiivne {
+	background-color: #14A3CC;
+}
+
+.test a:hover {
+	background-color: #B21244;
+}
+
+.tootemenyy li:hover {
+	
+	background-color: #B21244;
+}
+
+.peapaneel {
+	background-color: #B21244;
+	text-align: center;
+	font-size: 64px;
+	height: 80px;
+	margin-bottom: 50px;
+	
+}
+
+
+
+.keelenupp {
+	height: 40px; 
+	width: 40px;
+}
+
+.keelevalik:hover {
+	background-color: #bfae99;
+	border: 10px;
+}
+
+.logo {
+	background-image: url('../meedia/UI/logotype_sm.png');
+	height: 64px;
+	width: 140px;
+	margin: auto;
+	margin-top: 10px;
+	
+}
+
+.logo:hover {
+	background-image: url('../meedia/UI/logotype_anim.gif');
+	height: 64px;
+	width: 140px;
+	background-color: #B21244;
+}
+
+li {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#fbloginupp {
+     width: 60%;
+     margin: 0 auto;
+     padding: 0;
+     margin-top: 10px;
+     text-align: center;
+     
+    
+}
+
+#menu li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#menyy {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+#menu {
+	background-color: #098DB2;
+}
+
+
+
+
+#reklaam {
+	height: 100px;
+	background-color: #a8c0cd;
+	text-align: center;
+	font-size: 30px;
+}
+
+#reklaam2 {
+	background-color: #a8c0cd;
+	height: 460px; 
+	width: 70%; 
+	margin-top: 40px;
+	text-align: center;
+	font-size: 30px;
+	 
+}
+
+
+
+li:hover {
+	background-color: #14A3CC !important;
+}
+
+
+
+body {
+	background-color: #f2f1ef;
+}
+
+#logipaneel {
+	background-color: #d7dfe2;
+        
+}
+
+#registreerimispaneel {
+	background-color: #d7dfe2;
+}
+
+
+
+
+#kaart {
+    height: 400px;
+    width: 60%;
+	margin-left: 20%;
+}
+
+
+#ostutabel {
+	border-collapse: collapse;
+	background-color: #d7e1e5;
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+
+#registreerimispaneel p {
+	text-align: center;
+	font-size: 36px;
+}
+
+#logipaneel p {
+	text-align: center;
+	font-size: 36px;
+}
+
+
+#map {
+    height: 350px;
+    width: 500px;
+    margin: auto;
+}
+
+#tervitus {
+	font-size: 16px; 
+	
+}
+
+#kasutaja {
+	font-size: 20px;
+	float: left;
+	margin-left: -20px;
+	
+}
+
+#nupupaneel {
+	display: flex;
+	margin-top: -10px; 
+	padding-bottom: 20px;
+}
+
+#profiilipilt {
+	margin-right: 10px;
+}
+
+#ostukorvinupp {
+	margin-left: 20px;
+}
+
+#nimetervitus {
+	font-size: 27px;
+	float: left;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+
