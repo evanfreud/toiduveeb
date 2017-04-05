@@ -30,8 +30,8 @@ include 'php/keeled.php';
 			<div class="panel panel-default peapaneel">
 				
 				<div class="col-sm-2">
-					<a href="pealeht.php"><img onclick="document.cookie = 'lang=eng'"; src="../meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
-					<a href="pealeht.php"><img onclick="document.cookie = 'lang=est'"; src="../meedia/UI/lang_et.png" height="50px"; width="50px"; style="float: left;"/></a>
+					<a href="pealeht.php"><img onclick="document.cookie = 'lang=eng'"; src="meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
+					<a href="pealeht.php"><img onclick="document.cookie = 'lang=est'"; src="meedia/UI/lang_et.png" height="50px"; width="50px"; style="float: left;"/></a>
 				</div>
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>

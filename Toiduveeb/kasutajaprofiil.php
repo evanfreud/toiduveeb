@@ -12,9 +12,9 @@ session_start();
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-<script src="../javascript/skript.js"> </script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="javascript/skript.js"> </script>
 <?php
 include 'php/keeled.php'; 
 ?>
@@ -28,7 +28,7 @@ include 'php/keeled.php';
 			<div class="panel panel-default peapaneel">
 			
 				<div class="col-sm-2">
-				<a href="kasutajaprofiil.php"><img onclick="document.cookie = 'lang=eng'"; src="../meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
+				<a href="kasutajaprofiil.php"><img onclick="document.cookie = 'lang=eng'"; src="meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
 					<a href="kasutajaprofiil.php"><img onclick="document.cookie = 'lang=est'"; src="meedia/UI/lang_et.png" height="50px"; width="50px"; style="float: left;"/></a>
 				</div>
 				<div id="veeb" class="col-sm-7">
@@ -42,7 +42,7 @@ include 'php/keeled.php';
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include '/php/profiil.php';

@@ -15,7 +15,7 @@ var obj, parameeter, xmlhttp;
 				for(i = 0; i <= myObj.length;i++){
 					
 					document.getElementById(i).style.backgroundImage =  "";
-					document.getElementById(i).style.backgroundImage =  "url('/meedia/tooted/"+myObj[i].id_product+".png')";
+					document.getElementById(i).style.backgroundImage =  "url('../meedia/tooted/"+myObj[i].id_product+".png')";
 					document.getElementById(i).style.backgroundSize = "100% 100%";
 				}
     }

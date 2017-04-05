@@ -16,10 +16,9 @@ include 'php/keeled.php';
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="../javascript/skript.js"> </script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="javascript/skript.js"> </script>
 
 </head>
 
@@ -99,16 +98,6 @@ include 'php/keeled.php';
 				<nav class="navbar navbar-default">
 					<ul class="nav nav-pills nav-stacked tootemenüü">
 						
-						<a  data-toggle="collapse" href="#collapse1"> <li class="panel-collapse collapse" onclick="vali(1311);"><?php echo $lang["Teraviljatooted"]; ?>
-						
-						</li></a>
-						
-						 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-  <div id="demo" class="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
 						<li onclick="vali(1010);"><a href="#"><?php echo $lang["Piimatooted"]; ?></a></li>
 						<li onclick="vali(1212);"><a href="#"><?php echo $lang["Lihatooted"]; ?></a></li>
 						<li onclick="vali(1119);"><a href="#"><?php echo $lang["Puu- ja juurviljad"]; ?></a></li>
