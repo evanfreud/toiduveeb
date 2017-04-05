@@ -44,7 +44,7 @@ include 'php/keeled.php';
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include '/php/profiil.php';
