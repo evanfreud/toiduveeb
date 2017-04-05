@@ -1,3 +1,4 @@
+
 ﻿// Определим свои функции добавления/удаления класса, так как те, что в jQuery не работают для SVG
 jQuery.fn.myAddClass = function (classTitle) {
   return this.each(function() {
@@ -99,7 +100,7 @@ $(window).load(function () {
   });
 
   // Всплывающие подсказки
-  $(svgdom.getElementsByClassName("area")).tooltip({ 
+  /* $(svgdom.getElementsByClassName("area")).tooltip({ 
     track: true, 
     delay: 0, 
     showURL: false, 
@@ -116,5 +117,5 @@ $(window).load(function () {
       });
       return result;
     }
-  });
+  }); */
 });

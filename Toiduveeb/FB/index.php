@@ -1,16 +1,16 @@
 <?php
-	
-
 	# Start the session 
-	session_start();
+	if(!session_id()){
+    session_start();
+ }
 	
 	# Autoload the required files
 	require_once __DIR__ . '/vendor/autoload.php';
 
 	# Set the default parameters
 	$fb = new Facebook\Facebook([
-	  'app_id' => '1689262048033631',
-	  'app_secret' => '8bdefb66e49b3fdf63a190a4bfe57f30',
+	  'app_id' => '1267045453343192',
+	  'app_secret' => '261db9d4506c28020c882d90e3e570aa',
 	  'default_graph_version' => 'v2.8',
 	]);
 	$redirect = 'https://toiduveeb.cs.ut.ee/sisselogimine.php';
@@ -58,18 +58,19 @@
 
 
 		// Print the user Details
-		echo "Tere!<br><br>";
-		echo 'Nimi: ' . $userNode->getName().'<br>';
-		echo 'User ID: ' . $userNode->getId().'<br>';
-		echo 'Email: ' . $userNode->getProperty('email').'<br><br>';
+		
+		
 
 		$image = 'https://graph.facebook.com/'.$userNode->getId().'/picture?width=200';
-		echo "Kes on siin meil nii kaunis?<br>";
-		echo "<img src='$image' /><br><br>";
+		               
+                $_SESSION['id'] = $userNode->getName();
+                $_SESSION['email'] = $userNode->getProperty('email');
+                $_SESSION['image'] = 'https://graph.facebook.com/'.$userNode->getId().'/picture?width=200';
+                include 'php/profiil.php';
 		
 	}else{
 		$permissions  = ['email'];
 		$loginUrl = $helper->getLoginUrl($redirect,$permissions);
-		echo '<a href="' . $loginUrl . '"><img src="http://return.me/images/fbicon.png" width="200" height="50"></img></a>';
+		echo '<a href="' . $loginUrl . '"><img src="../meedia/UI/fb-login.png" width="200" height="40" alt="Logi Facebookiga" /></a>';
 	}
 ?>

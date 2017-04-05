@@ -27,8 +27,19 @@
 	"Registreeri kasutajaks"=>"Registreeri kasutajaks",
 	
 	"Sisselogimine"=>"Sisselogimine",
+        "Kasutajaprofiil"=>"Kasutajaprofiil",
 	"Jäta meelde"=>"Jäta meelde",
-	"Logi välja"=>"Logi välja"
+	"Logi välja"=>"Logi välja",
+
+        "Eesnime sisestus on kohustuslik"=>"Eesnime sisestus on kohustuslik",
+        "E-maili sisestus on kohustuslik"=>"E-maili sisestus on kohustuslik",
+        "Parool on kohustuslik"=>"Parool on kohustuslik",
+        "Paroolid ei kattu"=>"Paroolid ei kattu",
+        "Otsi toodet..."=>"Otsi toodet...",
+ 
+        "Toode"=>"Toode",
+        "Kogus"=>"Kogus",
+        "Hind"=>"Hind"
 	);
 
 

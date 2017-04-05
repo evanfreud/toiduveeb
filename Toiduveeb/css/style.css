@@ -1,9 +1,8 @@
-@charset "UTF-8";
-
-@media (min-width: 768px) {
+﻿@media (min-width: 768px) {
 #text {
   width: 50%;
   float: right;
+  /* -moz-box-sizing: border-box; */
   box-sizing: border-box;
   padding: 0 1em;     
 }
@@ -12,7 +11,8 @@
   display: block;
   width: 50%;
   float: right;
-  -moz-box-sizing: border-box;
+  /* -moz-box-sizing: border-box; */
+  box-sizing: border-box;
   margin: 0;
   padding: 1em;
   border: 0;
@@ -28,7 +28,7 @@
   width: 50%;
   float: left;
   box-sizing: border-box;
-  
+  /* -moz-box-sizing: border-box; */
 }
 
 figcaption {
@@ -152,6 +152,11 @@ tr:nth-child(even).selected {
 	font-size: 12px;
 }
 
+.reklaampilt {
+	height: 100%;
+	width: 100%;
+}
+
 
 .tootepilt {
 	height: 120px;
@@ -172,7 +177,7 @@ tr:nth-child(even).selected {
 	background-color: #cccccc;
 }
 
-.tootemenüü {
+.tootemenyy {
 	background-color: #ede5da;
 }
 
@@ -199,7 +204,7 @@ tr:nth-child(even).selected {
 	background-color: #B21244;
 }
 
-.tootemenüü li:hover {
+.tootemenyy li:hover {
 	
 	background-color: #B21244;
 }
@@ -247,12 +252,22 @@ li {
 	color: white;
 }
 
+#fbloginupp {
+     width: 60%;
+     margin: 0 auto;
+     padding: 0;
+     margin-top: 10px;
+     text-align: center;
+     
+    
+}
+
 #menu li {
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-#menüü {
+#menyy {
 	margin-top: 25px;
 	margin-bottom: 10px;
 }
@@ -290,12 +305,12 @@ li:hover {
 
 
 body {
-	/*background-color: #f2f1ef; */
-	background-image: url('taustapilt.jpg');
+	background-color: #f2f1ef;
 }
 
 #logipaneel {
 	background-color: #d7dfe2;
+        
 }
 
 #registreerimispaneel {
@@ -336,7 +351,7 @@ body {
 #map {
     height: 350px;
     width: 500px;
-	margin-left: 20px;
+    margin: auto;
 }
 
 #tervitus {
@@ -366,8 +381,9 @@ body {
 }
 
 #nimetervitus {
-	font-size: 24px;
+	font-size: 27px;
 	float: left;
 	margin-right: 40px;
 	margin-top: 30px;
 }
+

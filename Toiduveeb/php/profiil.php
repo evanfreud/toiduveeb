@@ -2,8 +2,9 @@
 
 
 
-//echo "Tere, " . $_SESSION['id'];
+
 		echo '
+
 			<script>
 				var para = document.createElement("p");
 				var node = document.createTextNode("Profiil");
@@ -20,6 +21,7 @@
 				para.style.marginTop = "30px";
 				para.style.height = "40px";
 				para.style.border = "1px solid black";
+                               
 				document.getElementById("kasutaja").appendChild(pilt);
 											
 				</script>

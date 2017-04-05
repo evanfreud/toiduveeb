@@ -1,9 +1,9 @@
 <?php
 
-if ($_COOKIE['lang'] == "est"){
-	include 'est.php';
-} else {
+if ($_COOKIE['lang'] == "eng"){
 	include 'eng.php';
+} else {
+	include 'est.php';
 }
 
 function muudaKeelt(){

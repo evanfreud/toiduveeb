@@ -1,5 +1,9 @@
 <?php
-session_start();
+ if(!session_id()){
+    session_start();
+ }
+ 
+ 
 include 'dbh.php';
 
 
@@ -17,7 +21,7 @@ if (!$row = mysqli_fetch_assoc($result)) {
 	$_SESSION['id'] = $row['username'];
 	
 }
-header("Location: /sisselogimine.php");
+header("Location: ../sisselogimine.php");
  
 
 ?>

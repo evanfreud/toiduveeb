@@ -1,0 +1,8 @@
+DirectoryIndex pealeht.php
+
+AddType text/cache-manifest .manifest
+
+ExpiresActive On
+ExpiresDefault "access"
+
+AddDefaultCharset UTF-8

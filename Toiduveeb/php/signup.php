@@ -1,7 +1,10 @@
 <?php
-session_start();
+ if(!session_id()){
+    session_start();
+ }
 
 include 'dbh.php';
+
 
 $eesnimi = $_POST['eesnimi'];
 $email = $_POST['email'];
@@ -12,7 +15,7 @@ $sql = "INSERT INTO users(username, email, password) VALUES ('$eesnimi', '$email
 
 $result = $conn->query($sql);
 
-header("Location: registreerimine.php");
+
 
 
 ?>
