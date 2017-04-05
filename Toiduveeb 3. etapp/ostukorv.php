@@ -8,15 +8,13 @@ session_start();
 
 <head>
 
-<meta charset="utf-8">
-
 <title>Ostukorv</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-<script src="../javascript/skript.js"> </script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="javascript/skript.js"> </script>
 <?php
 include 'php/keeled.php'; 
 ?>
@@ -30,8 +28,8 @@ include 'php/keeled.php';
 			<div class="panel panel-default peapaneel">
 				
 				<div class="col-sm-2">
-					<a href="ostukorv.php"><img onclick="document.cookie = 'lang=eng'" src="../meedia/UI/lang_en.png" height="50" width="50" style="float: left;" alt="Est"/></a>
-					<a href="ostukorv.php"><img onclick="document.cookie = 'lang=est'" src="../meedia/UI/lang_et.png" height="50" width="50" style="float: left;" alt="Eng"/></a>
+					<a href="ostukorv.php"><img onclick="document.cookie = 'lang=eng'"; src="meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
+					<a href="ostukorv.php"><img onclick="document.cookie = 'lang=est'"; src="meedia/UI/lang_et.png" height="50px"; width="50px"; style="float: left;"/></a>
 				</div>
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>
@@ -40,15 +38,14 @@ include 'php/keeled.php';
 				<div class="col-sm-3 nupupaneel" id="nupupaneel">
 					<p id="nimetervitus"><?php
 						if (isset($_SESSION['id'])){
-                                                        $x = explode(" ",$_SESSION['id']);
-							echo $x[0];
+							echo $_SESSION['id'];
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
-							include 'php/profiil.php';
+							include '/php/profiil.php';
 						} 
 					?>
 					
@@ -56,7 +53,7 @@ include 'php/keeled.php';
 			</div>
 		</div>
 		
-		<div id="menyy" class="row">	
+		<div id="menüü" class="row">	
 			<nav class="navbar navbar-default">
 				<ul id="menu" class="nav navbar-nav" >
 					<li><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
@@ -74,7 +71,7 @@ include 'php/keeled.php';
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" src="meedia/UI/varupilt.png" alt="Pilt" />
+					<img id="pilt" src="pilt.jpg" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -87,35 +84,35 @@ include 'php/keeled.php';
 		
 			<table id="ostutabel">
 		<tr>
-			<th class="osturiba" ><?php echo $lang['Toode']; ?></th>
-			<th class="osturiba2"><?php echo $lang['Kogus']; ?></th>
-			<th class="osturiba2"><?php echo $lang['Hind']; ?></th>
+			<th class="osturiba" >Toode</th>
+			<th class="osturiba2">Kogus</th>
+			<th class="osturiba2">Hind</th>
 		</tr>
 		<tr>
-			<td class="osturiba"><?php echo $lang['Toode']." 1"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Kogus']." 1"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Hind']." 1"; ?></td>
+			<td class="osturiba">Toode 1</td>
+			<td class="osturiba2">Kogus 1</td>
+			<td class="osturiba2">Hind 1</td>
 		</tr>
 		<tr>
-			<td class="osturiba"><?php echo $lang['Toode']." 2"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Kogus']." 2"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Hind']." 2"; ?></td>
+			<td class="osturiba">Toode 2</td>
+			<td class="osturiba2">Kogus 2</td>
+			<td class="osturiba2">Hind 2</td>
 		</tr>
 		<tr>
-			<td class="osturiba"><?php echo $lang['Toode']." 3"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Kogus']." 3"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Hind']." 3"; ?></td>
+			<td class="osturiba">Toode 3</td>
+			<td class="osturiba2">Kogus 3</td>
+			<td class="osturiba2">Hind 3</td>
 		</tr>
 		<tr>
-			<td class="osturiba"><?php echo $lang['Toode']." 4"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Kogus']." 4"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Hind']." 4"; ?></td>
+			<td class="osturiba">Toode 4</td>
+			<td class="osturiba2">Kogus 4</td>
+			<td class="osturiba2">Hind 4</td>
 		</tr>
 		
 		<tr>
-			<td class="osturiba"><?php echo $lang['Toode']." 5"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Kogus']." 5"; ?></td>
-			<td class="osturiba2"><?php echo $lang['Hind']." 5"; ?></td>
+			<td class="osturiba">Toode 5</td>
+			<td class="osturiba2">Kogus 5</td>
+			<td class="osturiba2">Hind 5</td>
 		</tr>
 		
 	
