@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 
@@ -8,18 +6,22 @@ session_start();
 
 <head>
 
-<title>Tarne</title>
+<title><?php echo $lang['Tarne']; ?>Tarne</title>
 
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<script src="javascript/jquery.js"></script>
-<script src="javascript/script.js"></script>
+<script src="javascript/jquery.js"> </script>
+<script src="javascript/skript.js"> </script>
+
 <?php
 include 'php/keeled.php'; 
 ?>
 
 </head>
+
 
 <body onload="laaditud();">
 
@@ -27,36 +29,34 @@ include 'php/keeled.php';
 	
 		<div class="row">
 			<div class="panel panel-default peapaneel">
-			
 				<div class="col-sm-2">
-				<a href="tarne.php"><img onclick="document.cookie = 'lang=eng'"; src="meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
-					<a href="tarne.php"><img onclick="document.cookie = 'lang=est'"; src="meedia/UI/lang_et.png" height="50px"; width="50px"; style="float: left;"/></a>
+					<a href="tarne.php"><img onclick="document.cookie = 'lang=eng'" src="meedia/UI/lang_en.png" height="50" width="50" style="float: left;" alt="Est"/></a>
+					<a href="tarne.php"><img onclick="document.cookie = 'lang=est'" src="meedia/UI/lang_et.png" height="50" width="50" style="float: left;" alt="Eng"/></a>
 				</div>
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>
 				</div>
 				
 				<div class="col-sm-3 nupupaneel" id="nupupaneel">
-					<p id="nimetervitus"><?php
+                                        <p id="nimetervitus"><?php
 						if (isset($_SESSION['id'])){
-							echo $_SESSION['id'];
+                                                        $x = explode(" ",$_SESSION['id']);
+							echo $x[0];
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="meedia/UI/scart.png" alt="Ostukorv" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
-							include '/php/profiil.php';
+							include 'php/profiil.php';
 						} 
 					?>
-					
-					
 					
 				</div>
 			</div>
 		</div>
 		
-		<div id="menüü" class="row">	
+		<div id="menyy" class="row">	
 			<nav class="navbar navbar-default">
 				<ul id="menu" class="nav navbar-nav" >
 					<li><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
@@ -74,7 +74,7 @@ include 'php/keeled.php';
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" src="pilt.jpg" alt="Pilt" />
+					<img id="pilt" src="meedia/UI/varupilt.png" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -85,9 +85,10 @@ include 'php/keeled.php';
 			<div class="col-sm-2">
 			</div>
 			<div class="col-sm-8">
+                                <script src="javascript/script.js"></script>
 				<div class="panel panel-default infopaneel">
 					<div class="panel-body">
-						<h1>Tarne</h1>
+						<h1><?php echo $lang['Tarne']; ?></h1>
 						<figure id="imapc">
 					<object data="meedia/UI/estonia_map.svg" type="image/svg+xml" id="imap" width="300" height="250"></object>
 					</figure>
@@ -166,7 +167,7 @@ include 'php/keeled.php';
 		</div>
 		
 	</div>
-	<script src="javascript/script2.js"></script>
+	
 
 </body>
 

@@ -3,7 +3,7 @@
 header("Content-Type: application/json; charset=UTF-8");
 $obj = json_decode($_GET["x"], false);
 
-$conn = mysqli_connect("localhost", "toiduveebcsut", "", "toiduveebcsut_tooted");
+$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
 $result = $conn->query("SELECT * FROM products WHERE prg_category=".$obj->kategooria);
 $outp = array();
 $outp = $result->fetch_all(MYSQLI_ASSOC);

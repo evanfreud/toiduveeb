@@ -1,4 +1,3 @@
-
 function vali(kategooria){
 
 var obj, parameeter, xmlhttp;
@@ -11,7 +10,7 @@ var obj, parameeter, xmlhttp;
 			if (this.readyState == 4 && this.status == 200) {
 				var i;
 				var myObj = JSON.parse(this.responseText);
-				
+				/* document.getElementById("test1").innerHTML = this.responseText; */
 				for(i = 0; i <= myObj.length;i++){
 					
 					document.getElementById(i).style.backgroundImage =  "";

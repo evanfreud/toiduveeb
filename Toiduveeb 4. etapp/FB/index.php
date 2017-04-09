@@ -1,6 +1,8 @@
 <?php
 	# Start the session 
-	session_start();
+	if(!session_id()){
+    session_start();
+ }
 	
 	# Autoload the required files
 	require_once __DIR__ . '/vendor/autoload.php';
