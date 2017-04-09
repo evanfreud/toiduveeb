@@ -8,6 +8,8 @@
 
 <head>
 
+<meta charset="utf-8">
+
 <title>Registreerimine</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +29,8 @@ include 'php/keeled.php';
 			<div class="panel panel-default peapaneel">
 			
 				<div class="col-sm-2">
-					<a href="registreerimine.php"><img onclick="document.cookie = 'lang=eng'"; src="meedia/UI/lang_en.png" height="50px"; width="50px"; style="float: left;"/></a>
-					<a href="registreerimine.php"><img onclick="document.cookie = 'lang=est'"; src="meedia/UI/lang_et.png" height="50px"; width="50px"; style="float: left;"/></a>
+					<a href="registreerimine.php"><img onclick="document.cookie = 'lang=eng'" src="meedia/UI/lang_en.png" height="50" width="50" style="float: left;" alt="Est"/></a>
+					<a href="registreerimine.php"><img onclick="document.cookie = 'lang=est'" src="meedia/UI/lang_et.png" height="50" width="50" style="float: left;" alt="Eng"/></a>
 				</div>
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>
@@ -37,7 +39,8 @@ include 'php/keeled.php';
 				<div class="col-sm-3 nupupaneel" id="nupupaneel">
 					<p id="nimetervitus"><?php
 						if (isset($_SESSION['id'])){
-							echo $_SESSION['id'];
+                                                        $x = explode(" ",$_SESSION['id']);
+							echo $x[0];
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
@@ -52,7 +55,7 @@ include 'php/keeled.php';
 			</div>
 		</div>
 		
-		<div id="menüü" class="row">	
+		<div id="menyy" class="row">	
 			<nav class="navbar navbar-default">
 				<ul id="menu" class="nav navbar-nav" >
 					<li><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
@@ -70,7 +73,7 @@ include 'php/keeled.php';
 			</div>
 			<div class="col-sm-10">
 				<div id="reklaam" class="panel panel-default">
-					<img id="pilt" src="pilt.jpg" alt="Pilt" />
+					<img id="pilt" src="meedia/UI/varupilt.png" alt="Pilt" />
 				</div>
 			</div>
 			<div class="col-sm-1">
@@ -82,7 +85,7 @@ include 'php/keeled.php';
 			</div>
 			<div class="col-sm-6">
 			
-			<script src="kontroll.php"></script>
+			
 			<?php 
 			$errEesnimi = $errPerenimi = $errEmail = $errParool = "";
 			
@@ -97,29 +100,34 @@ include 'php/keeled.php';
 						</div>
 						<div class="col-sm-6">
 							<form style="padding: 20px;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-								<div class="form-group">
+								<div class="form-group eesnimi1">
+                                                                        <div id="eesnimi1">Eesnimi ei tohi sisaldada numbreid ega erisümboleid</div>
 									<label><?php echo $lang['Eesnimi']; ?>:</label>
 									<input type="text" class="form-control" name="eesnimi">
 									
 									<span><?php echo $errEesnimi;?></span>
 									
 								</div>
-								<div class="form-group">
+								<div class="form-group perenimi">
+                                                                        <div id="perenimi">Perenimi ei tohi sisaldada numbreid ega erisümboleid</div>
 									<label><?php echo $lang['Perenimi']; ?>:</label>
 									<input type="text" class="form-control" name="perenimi">
 									<span><?php echo $errPerenimi;?></span>
 								</div>
-								<div class="form-group">
+								<div class="form-group email">
+                                                                        <div id="email">Sisesta email</div>
 									<label><?php echo $lang['E-mail']; ?>:</label>
 									<input type="email" class="form-control" name="email">
 									<span><?php echo $errEmail;?></span>
 								</div>
-								<div class="form-group">
+								<div class="form-group salasona">
+                                                                        <div id="salasona">Salasõna peab olema vähemalt 8 sümbolit pikk</div>
 									<label><?php echo $lang['Salasõna']; ?>:</label>
 									<input type="password" class="form-control" name="parool">
 									<span><?php echo $errParool;?></span>
 								</div>
-								<div class="form-group">
+								<div class="form-group salasonauuesti">
+                                                                        <div id="salasonauuesti">Salasõna peab olema vähemalt 8 sümbolit pikk</div>
 									<label><?php echo $lang['Salasõna uuesti']; ?>:</label>
 									<input type="password" class="form-control" name="parooluuesti">
 									<span><?php echo $errParool;?></span>
