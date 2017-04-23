@@ -1,0 +1,421 @@
+﻿/* body {
+    background-image: url("/meedia/UI/taust.jpg");
+    background-repeat: no-repeat;
+	background-size:100%;
+}
+*/
+
+#text {
+  width: 50%;
+  float: right;
+  /* -moz-box-sizing: border-box; */
+  
+  padding: 0 1em;     
+}
+
+#imapc {
+  display: block;
+  width: 50%;
+  float: right;
+  /* -moz-box-sizing: border-box; */
+  
+  margin: 0;
+  padding: 1em;
+  border: 0;
+}
+
+#imap{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#areas {
+  width: 50%;
+  float: left;
+ 
+  /* -moz-box-sizing: border-box; */
+}
+
+figcaption {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td, th {
+  border: 1px solid silver;
+  padding: 0.2em 1em;
+}
+
+thead th {
+  background: #E0E0E0;
+  color: black;
+}
+
+tr {
+  background: white;
+}
+
+
+
+	
+	
+	
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+.navbar-nav > li .navbar-right {
+float: right;
+}
+  
+.container{
+       max-width: 970px;
+    }
+
+
+tr.selected {
+   background: #CCCCFF;
+}
+
+
+.vorm {
+	padding-top: 20px;
+}
+
+.tootepaneel div:hover {
+	background-color: #aeb2b7;
+}
+
+.otsing {
+	margin-top: 50px;
+}
+
+.otsing1 {
+	width: 70%; 
+	margin: -20px 0px 30px 15%;
+}
+
+.infopaneel {
+	height: 1200px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 12px;
+}
+
+.reklaampilt {
+	height: 100%;
+	width: 100%;
+}
+
+
+.toode {
+	width: 120px;
+	height: 160px;
+	margin: 10px;
+	
+	float: left;
+}
+
+.toode .tootepilt{
+	width: 120px;
+	height: 100px;
+	display: block;
+	
+}
+
+.toode .lisa {
+	width: 120px;
+	height: 40px;
+}
+
+.tootepaneel {
+	height: 750px;
+	background-color: #d7dfe2;	
+}
+
+
+
+.tootepaneel div {
+	background-color: #cccccc;
+}
+
+.tootemenyy {
+	/*background-color: #ede5da;*/
+	background-color: #ffeecc;
+	
+}
+
+.tootemenyy li a:hover {
+	background-color: #e6ccb3;
+	border: 1px solid #b35900;
+	color: black;
+}
+
+.aktiivne1 {
+	background-color: #e6ccb3;
+	color: black;
+	border: 1px solid #b35900;
+}
+
+.toode .hinnasilt {
+	background-color: #ffeecc;
+}
+
+
+.osturiba {
+	width: 700px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+	padding: 20px;
+}
+
+.osturiba2 {
+	width: 100px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+
+.osturibapilt {
+	width: 50px;
+	border-right: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+
+.aktiivne {
+	background-color: #14A3CC;
+}
+
+.test a:hover {
+	background-color: #B21244;
+}
+
+.toode button {
+	width: 100%;
+	height: 40px;
+}
+
+
+.peapaneel {
+	background-color: #B21244;
+	text-align: center;
+	font-size: 64px;
+	height: 80px;
+	margin-bottom: 50px;
+	
+}
+
+
+
+.keelenupp {
+	height: 40px; 
+	width: 40px;
+}
+
+.keelevalik:hover {
+	background-color: #bfae99;
+	border: 10px;
+}
+
+.logo {
+	background-image: url('../meedia/UI/logotype_sm.png');
+	height: 64px;
+	width: 140px;
+	margin: auto;
+	margin-top: 10px;
+	
+}
+
+.logo:hover {
+	background-image: url('../meedia/UI/logotype_anim.gif');
+	height: 64px;
+	width: 140px;
+	background-color: #B21244;
+}
+
+li {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#fbloginupp {
+     width: 60%;
+     margin: 0 auto;
+     padding: 0;
+     margin-top: 10px;
+     text-align: center;
+     
+    
+}
+
+#menu li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#menyy {
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+#menu {
+	background-color: #098DB2;
+}
+
+
+
+
+#reklaam {
+	height: 100px;
+	background-color: #a8c0cd;
+	text-align: center;
+	font-size: 30px;
+}
+
+#reklaam2 {
+	background-color: #a8c0cd;
+	height: 460px; 
+	width: 70%; 
+	margin-top: 40px;
+	text-align: center;
+	font-size: 30px;
+	 
+}
+
+
+
+li:hover {
+	background-color: #14A3CC !important;
+}
+
+
+
+body {
+	background-color: #f2f1ef;
+}
+
+#logipaneel {
+	background-color: #d7dfe2;
+        
+}
+
+#registreerimispaneel {
+	background-color: #d7dfe2;
+}
+
+
+
+
+#kaart {
+    height: 400px;
+    width: 60%;
+	margin-left: 20%;
+}
+
+
+#ostutabel {
+	border-collapse: collapse;
+	/*background-color: #d7e1e5; */
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+
+#registreerimispaneel p {
+	text-align: center;
+	font-size: 36px;
+}
+
+#logipaneel p {
+	text-align: center;
+	font-size: 36px;
+}
+
+
+#map {
+    height: 350px;
+    width: 500px;
+    margin: auto;
+}
+
+#tervitus {
+	font-size: 16px; 
+	
+}
+
+#kasutaja {
+	font-size: 20px;
+	float: left;
+	margin-left: -20px;
+	
+}
+
+#nupupaneel {
+	display: inline-block;
+	margin-top: -10px; 
+	padding-bottom: 20px;
+}
+
+#profiilipilt {
+	margin-right: 10px;
+}
+
+#ostukorvinupp {
+	margin-left: 20px;
+}
+
+#nimetervitus {
+	font-size: 27px;
+	float: left;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+
+#eesnimi {
+	position: absolute;
+	margin-left: 30%;
+	width: 200px;
+	height: 100px;
+}
+
+
+
+
+#sooritaost {
+	display: inline-block;
+	margin-left: 40%;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	background-color: #cce6ff;
+}
+
+#logisisseaken {
+	visibility: hidden; 
+	border: 2px solid blue; 
+	background-color: white; 
+	height: 300px;
+	width: 300px; 
+	position: absolute; 
+	margin-left: 40%;
+}
+
+#nupp {
+	background-color: #ffe6b3;
+	height: 50px;
+	width: 150px;
+}
