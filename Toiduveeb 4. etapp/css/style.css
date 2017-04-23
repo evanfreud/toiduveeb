@@ -1,4 +1,18 @@
 ﻿@media (min-width: 768px) {
+	
+.languenupp {
+	float: left;
+	border: 2px solid #FFED19;
+	transition: border 1s;
+	
+}	
+
+.languenupp:hover{
+	float: left;
+	border: 2px solid #14A3CC; 
+	transition: border 1s;
+}
+
 #text {
   width: 50%;
   float: right;
@@ -46,45 +60,51 @@ td, th {
 }
 
 thead th {
-  background: #E0E0E0;
-  color: black;
+  background: #098DB2;
+  color: white;
+  border: 3px solid #FFED19;
+  font-size: 16px;
 }
 
 tr {
-  background: white;
-}
-
-tr.red {
-  background: #FFF0F0;
+  background: #14A3CC;
+  color: white;
+  border: 2px solid #FFED19;
+  transition: font-size 1s, border 1s, background 1s, text-shadow 1s;
 }
 
 tr.gray {
-  background: #CFCFCF;
+  background: #098DB2;
+  
+  
 }
 
 tr:nth-child(even) {
-  background: #F0F0F0;
+  background: #098DB2;
+  transition: font-size 1s, background 1s, border 1s, text-shadow 1s;
 }
 
 tr:nth-child(even).red {
-  background: #FFE6E6;
+  background: #098DB2;
 }
 
 tr:nth-child(even).gray {
-  background: #CCCCCC;
+  background: #098DB2;
 }
 
-tr.selected {
-  background: #CCCCFF;
-}
 tr:nth-child(even).selected {
   background: #BBBBFF;
 }
-               
+
+
 tr.highlight, tr:hover, tr:nth-child(even):hover, tr:nth-child(even).highlight,
 tr.red.highlight, tr.gray.highlight, tr.selected.highlight {
-  background: #FFFF99;
-  color: red;
+  background: #FF0050;
+  color: white;
+  text-shadow: 1px 2px #000000;
+  font-weight: bold;
+  font-size: 16px;
+  border: 4px solid #FFED19;
 }
 
 /* Всплывающие подсказки */
@@ -210,7 +230,7 @@ tr:nth-child(even).selected {
 }
 
 .peapaneel {
-	background-color: #B21244;
+	background-image: url('../meedia/UI/riba.png');
 	text-align: center;
 	font-size: 64px;
 	height: 80px;
@@ -243,7 +263,7 @@ tr:nth-child(even).selected {
 	background-image: url('../meedia/UI/logotype_anim.gif');
 	height: 64px;
 	width: 140px;
-	background-color: #B21244;
+
 }
 
 li {

@@ -23,15 +23,15 @@ include 'php/keeled.php';
 </head>
 
 
-<body onload="laaditud();">
+<body onload="laaditud();", background="meedia/UI/bg.png">
 
 	<div class="container-fluid">
 	
 		<div class="row">
 			<div class="panel panel-default peapaneel">
 				<div class="col-sm-2">
-					<a href="tarne.php"><img onclick="document.cookie = 'lang=eng'" src="meedia/UI/lang_en.png" height="50" width="50" style="float: left;" alt="Est"/></a>
-					<a href="tarne.php"><img onclick="document.cookie = 'lang=est'" src="meedia/UI/lang_et.png" height="50" width="50" style="float: left;" alt="Eng"/></a>
+					<a href="tarne.php"><img class="languenupp" onclick="document.cookie = 'lang=eng'" src="meedia/UI/lang_en.png" height="50" width="50" alt="Est"/></a>
+					<a href="tarne.php"><img class="languenupp" onclick="document.cookie = 'lang=est'" src="meedia/UI/lang_et.png" height="50" width="50" alt="Eng"/></a>
 				</div>
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>
@@ -45,7 +45,7 @@ include 'php/keeled.php';
 						} 
 					?></p>
 					<a href="kasutajaprofiil.php"><div id="kasutaja"></div></a>
-					<a href="ostukorv.php"><img id="ostukorvinupp" src="../meedia/UI/scart.png" alt="Ostukorv" /></a>
+					<a href="ostukorv.php"><img id="ostukorvinupp" src="meedia/UI/scart.png" alt="Ostukorv" /></a>
 					<?php
 						if (isset($_SESSION['id'])){
 							include 'php/profiil.php';
@@ -97,64 +97,84 @@ include 'php/keeled.php';
       <thead>
         <tr>
          <th>Regioon</th>
+		 <th>Maksumus</th>
         </tr>
       </thead>
       <tbody>
        <tr id='tallinn'> 
          <td>Tallinn</td>
+		 <td>3,90 €</td>
         </tr> 
        <tr id='tartu'> 
-          <td>Tartu</td> 
+          <td>Tartu</td>
+		  <td>3,90 €</td>		  
         </tr> 
        <tr id='parnu'> 
-          <td>Pärnu</td> 
+          <td>Pärnu</td>
+		  <td>3,90 €</td>		  
         </tr> 
        <tr id='narva'> 
           <td>Narva</td> 
+		  <td>3,90 €</td>
         </tr> 
        <tr id='harjumaa'> 
           <td>Harjumaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr id='tartumaa'> 
           <td>Tartumaa</td>
+		  <td>3,90 €</td>
 	   </tr>
        <tr id='parnumaa'> 
           <td>Pärnumaa</td>
+		  <td>3,90 €</td>
 	   </tr>
        <tr id='vostokmaa'> 
           <td>Ida-Virumaa</td>
+		  <td>3,90 €</td>
 	   </tr>
        <tr id='laanevirumaa'> 
           <td>Lääne-Virumaa</td>
+		  <td>3,90 €</td>
 	   </tr>
        <tr id='viljandimaa'> 
           <td>Viljandimaa</td>
+		  <td>3,90 €</td>
 	   </tr>
        <tr id='raplamaa'> 
           <td>Raplamaa</td>
+		  <td>3,90 €</td>
        <tr id='verumaa'> 
           <td>Võrumaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr> 
           <td>Saaremaa</td> 
+		  <td>Ei ole saadaval</td>
         </tr>
        <tr id='jegevamaa'> 
           <td>Jõgevamaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr id='jarvamaa'> 
           <td>Järvamaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr id='valgamaa'> 
           <td>Valgamaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr id='pelvamaa'> 
           <td>Põlvamaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr id='laanemaa'> 
           <td>Läänemaa</td> 
+		  <td>3,90 €</td>
         </tr>
        <tr id='hiiumaa'> 
           <td>Hiiumaa</td> 
+		  <td>3,90 €</td>
         </tr>
 		
       </tbody>
