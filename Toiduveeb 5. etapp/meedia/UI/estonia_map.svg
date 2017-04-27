@@ -23,12 +23,14 @@
 	.area:hover {
            fill: #14A3CC;
 		   stroke: #FFED19;
-		   stroke-width:4px;		   
+		   stroke-width:4px;
+		
          }
 	.area{
 		fill: #FF0050;
 		stroke:#000000;
 		stroke-width:2px;
+		transition: stroke-width 1s, fill 1s, stroke 1s;
 		}
 	.nonavail{
 		fill: #555555;
