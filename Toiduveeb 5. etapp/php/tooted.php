@@ -11,7 +11,7 @@ if (json_decode($_GET["y"], false) == "tyhjenda"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	$result = $conn->query("DELETE FROM ostukorv");
 
 	$conn->close();
@@ -23,7 +23,7 @@ if (json_decode($_GET["y"], false) == "tooted"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	$result = $conn->query("SELECT * FROM products WHERE prg_category=".$obj->kategooria1." OR prg_category=".$obj->kategooria2." OR prg_category=".$obj->kategooria3." OR prg_category=".$obj->kategooria4." OR prg_category=".$obj->kategooria5." OR prg_category=".$obj->kategooria6." OR prg_category=".$obj->kategooria7);
 	$outp = array();
 	$outp = $result->fetch_all(MYSQLI_ASSOC);
@@ -44,7 +44,7 @@ if (json_decode($_GET["y"], false) == "ostukorv"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	$result = $conn->query("SELECT id_product, prd_name, prd_price FROM ostukorv");
 	$outp = array();
 	$outp = $result->fetch_all(MYSQLI_ASSOC);
@@ -67,7 +67,7 @@ if (json_decode($_GET["y"], false) == "lisakorvi"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	$toode = $conn->query("SELECT id_product, prd_name, prd_price FROM products WHERE id_product=".$obj->id);
 	$outp = array();
 	$outp = $toode->fetch_all(MYSQLI_ASSOC);
@@ -87,7 +87,7 @@ if (json_decode($_GET["y"], false) == "keskmine"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	
 	$summa = $conn->query("SELECT AVG(prd_price) AS arv, COUNT(*) AS sum FROM products");
 	$outp = array();
@@ -110,7 +110,7 @@ if (json_decode($_GET["y"], false) == "leiaToode"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	$result = $conn->query("SELECT * FROM  products WHERE id_product = (SELECT MAX(id_product)  FROM products)");
 	
     
@@ -133,7 +133,7 @@ if (json_decode($_GET["y"], false) == "uuedTooted"){
 	header("Content-Type: application/json; charset=UTF-8");
 	$obj = json_decode($_GET["x"], false);
 
-	$conn = mysqli_connect("localhost", "root", "Samurai1989", "tooted");
+	$conn = mysqli_connect("localhost", "root", "", "tooted");
 	$result = $conn->query("SELECT * FROM  products WHERE id_product BETWEEN (SELECT MAX(id_product) FROM products)-10 AND (SELECT MAX(id_product) FROM products)");
 	
     

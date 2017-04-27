@@ -55,18 +55,30 @@ include 'php/keeled.php';
 			</div>
 		</div>
 		
-		<div id="menyy" class="row">	
-			<nav class="navbar navbar-default">
-				<ul id="menu" class="nav navbar-nav" >
-					<li><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
-					<li><a href="pealeht.php"><?php echo $lang['Tooted']; ?></a></li>
-					<li><a href="kuidasosta.php"><?php echo $lang['Kuidas osta?']; ?></a></li>
-					<li><a href="tarne.php"><?php echo $lang['Tarne']; ?></a></li>
-					<li class="aktiivne"><a href="registreerimine.php"><?php echo $lang['Registreeri kasutajaks']; ?></a></li>
-					<li><a href="sisselogimine.php"><?php echo $lang['Logi sisse']; ?></a></li>
-				</ul>
-			</nav>
-		</div>
+<nav id="menyy" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand">Toiduveeb</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="mmenu_button"><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
+        <li class="mmenu_button"><a href="pealeht.php"><?php echo $lang['Tooted']; ?></a></li>
+        <li class="mmenu_button"><a href="kuidasosta.php"><?php echo $lang['Kuidas osta?']; ?></a></li> 
+        <li class="mmenu_button"><a href="tarne.php"><?php echo $lang['Tarne']; ?></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		<li class="aktiivne"><a href="registreerimine.php"><?php echo $lang['Registreeri kasutajaks']; ?></a></li>
+		<li><a href="sisselogimine.php"><?php echo $lang['Logi sisse']; ?></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 		<div class="row">
 			<div class="col-sm-1">

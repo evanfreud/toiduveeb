@@ -5,7 +5,6 @@
 <html>
 
 <head>
-
 <title><?php echo $lang['Tarne']; ?>Tarne</title>
 
 <meta charset="utf-8">
@@ -15,7 +14,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script src="javascript/jquery.js"> </script>
 <script src="javascript/skript.js"> </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <?php
 include 'php/keeled.php'; 
 ?>
@@ -25,8 +25,7 @@ include 'php/keeled.php';
 
 <body onload="laaditud();">
 
-	<div class="container-fluid">
-	
+	<div class="container-fluid">	
 		<div class="row">
 			<div class="panel panel-default peapaneel">
 				<div class="col-sm-2">
@@ -36,7 +35,6 @@ include 'php/keeled.php';
 				<div id="veeb" class="col-sm-7">
 					<div class="logo"></div>
 				</div>
-				
 				<div class="col-sm-3 nupupaneel" id="nupupaneel">
                                         <p id="nimetervitus"><?php
 						if (isset($_SESSION['id'])){
@@ -49,25 +47,35 @@ include 'php/keeled.php';
 					<?php
 						if (isset($_SESSION['id'])){
 							include 'php/profiil.php';
-						} 
-					?>
-					
+						}?>					
 				</div>
 			</div>
 		</div>
 		
-		<div id="menyy" class="row">	
-			<nav class="navbar navbar-default">
-				<ul id="menu" class="nav navbar-nav" >
-					<li><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
-					<li><a href="pealeht.php"><?php echo $lang['Tooted']; ?></a></li>
-					<li><a href="kuidasosta.php"><?php echo $lang['Kuidas osta?']; ?></a></li>
-					<li class="aktiivne"><a href="tarne.php"><?php echo $lang['Tarne']; ?></a></li>
-					<li><a href="registreerimine.php"><?php echo $lang['Registreeri kasutajaks']; ?></a></li>
-					<li><a href="sisselogimine.php"><?php echo $lang['Logi sisse']; ?></a></li>
-				</ul>
-			</nav>
-		</div>
+<nav id="menyy" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand">Toiduveeb</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="mmenu_button"><a href="meist.php"><?php echo $lang['Meist']; ?></a></li>
+        <li class="mmenu_button"><a href="pealeht.php"><?php echo $lang['Tooted']; ?></a></li>
+        <li class="mmenu_button"><a href="kuidasosta.php"><?php echo $lang['Kuidas osta?']; ?></a></li> 
+        <li class="aktiivne"><a href="tarne.php"><?php echo $lang['Tarne']; ?></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="registreerimine.php"><?php echo $lang['Registreeri kasutajaks']; ?></a></li>
+		<li><a href="sisselogimine.php"><?php echo $lang['Logi sisse']; ?></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>	
 
 		<div class="row">
 			<div class="col-sm-1">
@@ -170,6 +178,65 @@ include 'php/keeled.php';
 	
 
 </body>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				/**
+				* for each menu element, on mouseenter, 
+				* we enlarge the image, and show both sdt_active span and 
+				* sdt_wrap span. If the element has a sub menu (sdt_box),
+				* then we slide it - if the element is the last one in the menu
+				* we slide it to the left, otherwise to the right
+				*/
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'170px',
+							'height':'170px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'140px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'170px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '170px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-170px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'85px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'25px'},500);
+				});
+            });
+        </script>
 
 
 </html>
